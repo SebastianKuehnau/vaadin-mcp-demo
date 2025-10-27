@@ -37,6 +37,17 @@ java -jar target/mcp-demo-1.0-SNAPSHOT.jar
 - `views` folder in `src/main/frontend` contains the client-side JavaScript views of your application.
 - `themes` folder in `src/main/frontend` contains the custom CSS styles.
 
+
+## Using Claude Code to create new View
+
+following prompts has been executed in the terminal:
+
+1. create a new view called article management with a grid and a corresponding form to create new articles, edit existing articles or delete articles. create a new bean called article with the fields name as string, price as                                                                                                                                                                                           
+currency in euro, description as text and production_date as date. Also create some example data.
+2. please create tests with Testbench with UI Unit Tests to check the CRUD features of ArticleManagementView
+3. try to fix problems with the tests
+    a.  the tests doesn't work and stop with the following error message
+
 ## Useful links
 
 - Read the documentation at [vaadin.com/docs](https://vaadin.com/docs).

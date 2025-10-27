@@ -46,10 +46,8 @@ public class ArticleService implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        // Create example data only if the database is empty
-        if (repository.count() == 0) {
-            createExampleData();
-        }
+        repository.deleteAll();
+        createExampleData();
     }
 
     private void createExampleData() {
